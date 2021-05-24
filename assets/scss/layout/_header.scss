@@ -1,0 +1,168 @@
+//
+// Header
+// --------------------------------------------------
+
+
+.header-top {
+  background-color: $black;
+  padding: 8px 0;
+}
+
+.need-help {
+  li {
+    display: inline;
+    color: $white;
+    font-size: 14px;
+    padding-right: 15px;
+
+    a {
+      display: inline-block;
+      color: $white;
+    }
+
+    i {
+      padding-right: 3px;
+    }
+  }
+}
+
+.offer {
+  marquee {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.social-area {
+  text-align: right;
+
+  li {
+    display: inline;
+    padding-left: 15px;
+
+    a {
+      color: $white;
+      font-size: 14px;
+    }
+  }
+}
+
+
+
+
+.header-bottom {
+  background: $white;
+  padding: 20px 0;
+  transition: all 0.3s;
+}
+
+.header-logo a {
+  padding: 8px 0;
+  display: inline-block;
+}
+
+.header-menu {
+  padding: 8px 0;
+  li {
+    display: inline;
+
+    a {
+      display: inline-block;
+      font-size: 14px;
+      color: $black;
+      font-weight: 400;
+      padding: 10px;
+      text-transform: uppercase;
+      
+    }
+  }
+}
+
+.menu-search {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  margin-top: 4px;
+
+  input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    float: left;
+    outline: none;
+    border-radius: 50px;
+  }
+  input[type="submit"] {
+    width: 10%;
+    float: left;
+    border: none;
+    background-image: url(assets/img/icon/search-solid.svg);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    padding-top: 19px;
+  }
+}
+
+.profile-area {
+  text-align: right;
+
+  li {
+    position: relative;
+    display: inline;
+
+    a {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: capitalize;
+      color: $black;
+      padding: 8px 10px;
+      img {
+        width: 40px;
+        border-radius: 50px;
+      }
+    }
+  }
+}
+
+.profile-info {
+  width: 250px;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  padding: 5px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99999;
+  transition: all 0.3s;
+  background-color: $white;
+
+  li {
+
+    a {
+      padding-bottom: 5px;
+      display: block;
+    }
+  }
+}
+
+.profile-area li:hover .profile-info {
+ visibility: visible;
+ opacity: 1;
+}
+
+.sticky_menu {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 999;
+  top: 0;
+  transition: all 0.5s;
+  border-bottom: 1px solid #ddd;
+  padding: 3px 0;
+}
+
