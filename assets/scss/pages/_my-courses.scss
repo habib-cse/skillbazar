@@ -1,0 +1,53 @@
+// 
+// My Courses
+// ========================
+
+
+
+
+.my-courses-breadcrumb {
+    background-color: $black;
+    padding: 50px 0;
+
+    h2 {
+        @include title;
+        color: $gray;
+        text-transform: capitalize;
+    }
+}
+
+.my-courses {
+    padding: 70px 0;
+
+    .my-course-item {
+        border: 1px solid $border-color;
+        border-radius: 4px;
+    
+        h3 {
+            @include sub-sub-title;
+            font-size: 16px;
+            margin: 10px;
+            border-bottom: 1px solid $border-color;
+            padding-bottom: 10px;
+
+            a {
+                color: $black;
+            }
+        }
+
+        ul {
+            margin: 10px;
+
+            i {
+                margin-right: -4px;
+                font-size: 14px;
+            }
+
+            span {
+                padding-left: 5px;
+            }
+        }
+    }
+    
+}
+

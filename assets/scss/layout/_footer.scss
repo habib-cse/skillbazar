@@ -2,3 +2,136 @@
 // Footer
 // --------------------------------------------------
 
+
+
+.footer-top {
+    border-top: 1px solid $border-color;
+    background: $white;
+    padding: 50px 0;
+  }
+  
+  .footer-logo {
+    img {
+      margin-bottom: 20px;
+      max-width: 230px;
+    }
+  
+    h5 {
+      @include paragraph;
+      padding-bottom: 30px;
+    }
+  
+    p {
+      @include paragraph;
+
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .quick-link {
+    h3 {
+      @include sub-sub-title;
+      text-transform: capitalize;
+      padding-bottom: 10px;
+    }
+
+    li {
+      a {
+        display: inline-block;
+        color: $black;
+        transition: all 0.5s;
+        padding-bottom: 5px;
+        &:hover {
+          text-decoration: underline !important;
+        }
+      }
+    }
+    
+    ul {
+      padding-left: 10px;
+    }
+  }
+
+  .footer-bottom {
+    background-color: #000;
+    padding: 20px 0;
+    text-align: center;
+
+    p {
+      @include paragraph;
+      color: $white;
+    }
+  }
+
+  .subscribes {
+    h3 {
+      @include sub-sub-title;
+      text-transform: capitalize;
+      padding-bottom: 30px;
+    }
+
+    input[type="email"] {
+      float: left;
+      width: 80%;
+      padding: 8px;
+      border: 1px solid $primary-color;
+      border-radius: 4px 0 0 4px;
+      outline: none;
+    }
+    input[type="submit"] {
+      width: 20%;
+      float: left;
+      padding: 8px;
+      background: $primary-color;
+      border: 1px solid $primary-color;
+      border-radius: 0 4px 4px 0;
+      color: $white;
+    }
+  }
+
+  .footer-social {
+    padding-top: 30px;
+    width: 100%;
+    display: inline-block;
+
+    li {
+      display: inline;
+      padding-right: 20px;
+
+      a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        border: 2px solid $primary-color;
+        text-align: center;
+        color: $primary-color;
+        padding-top: 7px;
+        transition: all 0.5s;
+        &:hover {
+          background-color: $primary-color;
+          color: $white;
+        }
+      }
+    }
+  }
+
+
+  // .copyright {
+  //   text-align: left;
+  // }
+
+  .ins-socials {
+    text-align: right;
+    li {
+      display: inline;
+
+      a {
+        color: $white;
+        padding: 5px;
+        margin-left: 10px;
+      }
+    }
+  }

@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-    // counter up
-    // $('.counter').counterUp();
-
-
     // Category Slider
     $('.cate-slider').owlCarousel({
         loop:true,
@@ -43,7 +39,29 @@ $(document).ready(function() {
               items:3
           },
           1000:{
-              items:5
+              items:4
+          }
+        }
+    });
+
+    // Similar Curses Slider
+    $('.similar-slider').owlCarousel({
+        loop:true,
+        margin:30,
+        autoplay: true,
+        smartSpeed: 1000,
+        autoplayHoverPause: true,
+        dots: false,
+        nav:true,
+        responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:2
+          },
+          1000:{
+              items:4
           }
         }
     });

@@ -34,3 +34,11 @@ sup {
 	font-size: 30px;
 	top: 6px;
 }
+
+.primary-color {
+  color: $primary-color;
+}
+
+p {
+  @include paragraph;
+}

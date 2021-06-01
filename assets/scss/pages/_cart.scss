@@ -1,0 +1,70 @@
+.shopping-cart {
+    padding: 50px 0;
+
+    .carts {
+
+        h4 {
+            @include sub-sub-title;
+            font-size: 16px;
+        }
+        a {
+            color: $primary-color;
+        }
+    }
+
+    .total-price {
+        padding-top: 10px;
+
+        h4 {
+            text-transform: capitalize;
+            padding-bottom: 20px;
+
+            span {
+                float: right;
+            }
+        }
+
+        a {
+            display: block;
+            background-color: $primary-color;
+            padding: 10px;
+            text-align: center;
+            color: $white;
+            border-radius: 4px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+            font-size: 16px;
+            font-weight: 500;
+            border: 2px solid $primary-color;
+            transition: all 0.5s;
+
+            &:hover {
+                background-color: transparent;
+                color: $primary-color;
+            }
+        }
+    }
+
+    .coupon-area {
+        input[type="text"] {
+            float: left;
+            width: 80%;
+            padding: 8px;
+            border-radius: 4px 0 0 4px;
+            border: 1px solid $primary-color;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            float: left;
+            width: 20%;
+            padding: 8px;
+            border: 1px solid $primary-color;
+            border-radius: 0 4px 4px 0;
+            background: $primary-color;
+            color: $white;
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+}

@@ -1,3 +1,86 @@
 //
 // Mixins
 // --------------------------------------------------
+
+
+// Dots List
+@mixin dots-list {
+    li {
+        position: relative;
+        padding-left: 12px;
+
+        &::before {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            content: "";
+            width: 5px;
+            height: 5px;
+            background-color: $black;
+            border-radius: 30px;
+        }
+    }
+}
+
+// Paragraph
+@mixin paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $black;
+}
+
+// Mian Title
+@mixin main-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: $black;
+    line-height: 1.2;
+    font-family: $font-secondary;
+}
+
+// Title
+@mixin title {
+    font-size: 30px;
+    font-weight: 600;
+    color: $black;
+    line-height: 1.2;
+    font-family: $font-secondary;
+}
+
+// Sub Title
+@mixin sub-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: $black;
+    line-height: 1.2;
+    font-family: $font-secondary;
+}
+
+@mixin sub-sub-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: $black;
+    line-height: 1.2;
+    font-family: $font-secondary;
+}
+
+@mixin primary-btn {
+    display: inline-block;
+    padding: 8px 20px;
+    color: $white;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: $primary-color;
+    border: 2px solid $primary-color;
+    border-radius: 4px;
+    transition: all 0.5s;
+    font-weight: 500;
+    font-size: 16px;
+
+    &:hover {
+        background-color: transparent;
+        color: $primary-color;
+        border-radius: 6px;
+    }
+}

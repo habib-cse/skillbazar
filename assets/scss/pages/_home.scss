@@ -13,13 +13,14 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(233, 139, 52, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: -1;
   }
 }
 
 .hero {
   h1 {
+    color: $white;
     font-size: 40px;
     font-weight: 700;
     padding-bottom: 20px;
@@ -29,7 +30,7 @@
   h3 {
     font-size: 24px;
     font-weight: 400;
-    color: $black;
+    color: $white;
   }
 }
 
@@ -67,8 +68,12 @@
     display: inline;
     padding-right: 50px;
 
+    i {
+      color: $white;
+    }
+
     a {
-      color: $black;
+      color: $white;
       font-size: 16px;
       padding-left: 5px;
     }
@@ -88,7 +93,7 @@
 
     span {
       font-size: 30px;
-      color: #fff;
+      color: $white;
     }
   }
   .owl-prev {
@@ -98,7 +103,7 @@
     width: 30px;
     height: 100%;
     z-index: 9999;
-    background: rgba(233, 139, 52, 0.5) !important;
+    background: rgba(70, 143, 234, 0.5) !important;
   }
   .owl-next {
     position: absolute;
@@ -107,13 +112,26 @@
     width: 30px;
     height: 100%;
     z-index: 9999;
-    background: rgba(233, 139, 52, 0.5) !important;
+    background: rgba(70, 143, 234, 0.5) !important;
   }
 }
+
+.cate-title {
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 40px;
+  margin-bottom: 50px;
+
+  h2 {
+    @include title;
+    text-transform: capitalize;
+  }
+}
+
 .cate-slider:hover .owl-nav {
   opacity: 1;
   visibility: visible;
 }
+
 .course-cat {
   position: relative;
 }
@@ -136,26 +154,24 @@
     transition: all 0.5s;
 
     &:hover {
-      color: rgba(233, 139, 52, 0.5);
+      color: $primary-color;
     }
   }
 }
 
 
 .course-title {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   border-bottom: 1px solid $gray;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   h2 {
-    font-family: $font-secondary;
-    font-size: 30px;
+   @include title;
     text-transform: uppercase;
-    position: relative;
   }
 }
 .popular-course {
-  border: 1px solid #ddd;
+  border: 1px solid $gray;
 }
 .course-img {
   position: relative;
@@ -175,10 +191,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s;
 
   a {
-    color: $black;
-    background-color: rgba(233, 139, 52, 1);
+    color: $white;
+    background-color: $primary-color;
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
@@ -201,20 +218,25 @@
   }
   .teacher {
     display: block;
-    color: #000;
+    color: $primary-color;
     margin: 5px 0;
+
+    &:hover {
+      text-decoration: underline !important;
+    }
   }
+
   .course-name {
     font-size: 18px;
-    color: red;
+    color: $primary-color;
     font-weight: 600;
     display: block;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid $border-color;
     padding-bottom: 30px;
     transition: all 0.3s;
 
     &:hover {
-      color: $black;
+      text-decoration: underline !important;
     }
   }
 }
@@ -225,30 +247,30 @@
   
   .cf-left {
     float: left;
-    width: 40%;
+    width: 50%;
 
     li {
       display: inline;
       padding-right: 10px;
+      color: $primary-color;
     }
   }
   .course-price {
     float: left;
-    width: 60%;
+    width: 50%;
     text-align: right;
 
     h5 {
-      color: rgba(233, 139, 52, 1);
+      color: $primary-color;
       font-size: 16px;
       text-transform: capitalize;
       font-weight: 500;
     }
 
     p {
-      color: red;
+      color: $primary-color;
     }
     del {
-      color: $black;
       padding-right: 5px;
     }
   }
@@ -256,12 +278,12 @@
 .popular-slider {
   .owl-nav {
     position: absolute;
-    top: -82px;
+    top: -71px;
     right: 0;
 
     span {
       text-align: center;
-      background-color: rgba(233, 139, 52, 0.5) !important;
+      line-height: 30px;
       padding: 0 15px;
       font-size: 30px;
       font-weight: 400;
@@ -269,14 +291,15 @@
     }
   }
   .owl-next {
+    background-color: $primary-color !important;
     width: 40px;
     height: 40px;
   }
   .owl-prev {
+    background-color: $primary-color !important;
     margin-right: 12px;
     width: 40px;
     height: 40px;
-    text-align: center;
   }
 }
 .all-pcourse {
@@ -288,9 +311,67 @@
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 500;
-    border: 1px solid #ddd;
+    border: 1px solid $border-color;
     border-radius: 4px;
     display: inline-block;
     padding: 6px 20px;
   }
 }
+
+.popular-courses {
+  padding: 70px 0;
+}
+
+
+.counter-area {
+  background-image: url(assets/img/bg/hero-home-bg.jpg);
+  padding: 100px 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 9;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+}
+
+.counter-content {
+  text-align: center;
+
+  h3 {
+    @include main-title;
+    padding: 10px 0;
+    color: $white
+  }
+
+  h4 {
+    @include sub-sub-title;
+    color: $white;
+  }
+}
+
+.counter-icon {
+  width: 60px;
+  height: 60px;
+  border: 1px solid $white;
+  border-radius: 50px;
+  padding-top: 15px;
+  margin: 0 auto;
+
+  i {
+    font-size: 30px;
+    color: $white;
+  }
+}
+
+
+
