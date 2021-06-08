@@ -39,6 +39,90 @@ sup {
   color: $primary-color;
 }
 
+.primary-bg {
+  background-color: $primary-color;
+}
+
 p {
   @include paragraph;
 }
+
+.enroll-btn a, .update-btn {
+  display: inline-block;
+  padding: 5px 15px;
+  color: $white !important;
+  text-transform: capitalize;
+  text-align: center;
+  background-color: $primary-color;
+  border: 2px solid $primary-color;
+  border-radius: 4px;
+  transition: all 0.5s;
+  font-weight: 500;
+  font-size: 15px;
+  &:hover {
+    background-color: transparent;
+    color: $primary-color !important;
+  }
+}
+
+
+.go-wishlist a {
+  display: block !important;
+  padding: 5px 15px;
+  color: $secondary-color !important;
+  text-transform: capitalize;
+  text-align: center;
+  background-color:transparent;
+  border: 2px solid $secondary-color;
+  border-radius: 4px;
+  transition: all 0.5s;
+  font-weight: 500;
+  font-size: 15px;
+  &:hover {
+    background-color:  $secondary-color;
+    color: $white !important;
+  }
+}
+
+.mark-read {
+  background-color: transparent !important;
+  color: $primary-color !important;
+  border: 2px solid $primary-color;
+  
+  &:hover {
+    background-color: $primary-color !important;
+    color: $white !important;
+  }
+}
+
+
+.list-group-item.active {
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+
+.form-control {
+  box-shadow: none !important;
+}
+
+.form-check-input:checked {
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+
+.form-check-input.is-valid:checked, .was-validated .form-check-input:valid:checked {
+  background-color: red;
+}
+.form-check-input.is-valid, .was-validated .form-check-input:valid {
+  border-color: red;
+}
+.form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label {
+  color: red;
+}
+
+
+
+
+
+
+

@@ -106,7 +106,7 @@
   position: absolute;
   z-index: 999;
   background-color: $white;
-  top: 65px;
+  top: 60px;
   border: 1px solid $border-color;
   border-radius: 4px;
   visibility: hidden;
@@ -187,7 +187,7 @@
 .profile-info {
   width: 250px;
   position: absolute;
-  top: 65px;
+  top: 60px;
   right: 0;
   padding: 5px;
   visibility: hidden;
@@ -221,5 +221,114 @@
   transition: all 0.5s;
   border-bottom: 1px solid #ddd;
   padding: 3px 0;
+}
+
+.notifi-area {
+  text-align: left;
+  padding: 5px 0;
+  width: 300px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99999;
+  transition: all 0.3s;
+  background-color: $white;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+
+  table {
+    td {
+      padding: 0;
+    }
+  }
+
+  h4 {
+    @include sub-sub-title;
+    text-transform: capitalize;
+    padding: 0 0 10px 5px;
+  }
+
+  p {
+    width: 100%;
+    display: inline-block;
+
+    a {
+      padding: 0;
+      float: left;
+      width: 90%;
+    }
+    span {
+      float: right;
+      width: 10%;
+    }
+  }
+
+  .all-notific {
+    text-align: center;
+
+    button {
+      color: $white;
+      background-color: $primary-color;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.profile-area li:hover .notifi-area {
+  visibility: visible;
+  opacity: 1;
+}
+
+.wishlists {
+  text-align: left;
+  border: 1px solid rgba(0,0,0,.125);
+  width: 360px;
+  background-color: $white;
+  border-radius: 4px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+
+  .card {
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+  }
+
+  h5 {
+    font-family: $font-primary;
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .enroll-btn {
+    a {
+      display: block;
+    }
+  }
+
+  .go-wishlist {
+    padding: 10px;
+  }
+
+  .go-cart {
+    padding: 10px;
+  }
+}
+
+.profile-area li:hover .wishlists {
+  visibility: visible;
+  opacity: 1;
 }
 

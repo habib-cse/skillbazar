@@ -48,6 +48,7 @@
     float: left;
     outline: none;
   }
+
   input[type="submit"] {
     width: 10%;
     float: left;
@@ -58,6 +59,18 @@
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  // Responsive Style
+  @media (max-width: 767px) {
+    width: 100%;
+
+    input[type="text"] {
+      width: 85%;
+    }
+    input[type="submit"] {
+      width: 15%;
+    }
   }
 }
 
@@ -76,6 +89,14 @@
       color: $white;
       font-size: 16px;
       padding-left: 5px;
+    }
+  }
+
+  // Responsive Style
+  @media (max-width: 767px) {
+    li {
+      display: block;
+      padding-right: 0;
     }
   }
 }
@@ -103,7 +124,7 @@
     width: 30px;
     height: 100%;
     z-index: 9999;
-    background: rgba(70, 143, 234, 0.5) !important;
+    background: #ec5252a6 !important;
   }
   .owl-next {
     position: absolute;
@@ -112,7 +133,7 @@
     width: 30px;
     height: 100%;
     z-index: 9999;
-    background: rgba(70, 143, 234, 0.5) !important;
+    background: #ec5252a6 !important;
   }
 }
 
@@ -124,6 +145,13 @@
   h2 {
     @include title;
     text-transform: capitalize;
+  }
+
+  // Responsive Style
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 24px;
+    }
   }
 }
 
@@ -169,7 +197,15 @@
    @include title;
     text-transform: uppercase;
   }
+
+  // Responsive Style
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 24px;
+    }
+  }
 }
+
 .popular-course {
   border: 1px solid $gray;
 }
@@ -346,6 +382,7 @@
 
 .counter-content {
   text-align: center;
+  padding-bottom: 30px;
 
   h3 {
     @include main-title;

@@ -1,0 +1,85 @@
+// 
+// My Profile Page
+// -----------------------
+.my-profile {
+    padding-top: 50px;
+
+    h2 {
+        @include title;
+        text-transform: capitalize;
+    }
+
+    h3 {
+        @include sub-sub-title;
+        text-transform: capitalize;
+        padding-bottom: 30px;
+    }
+
+    p {
+        span {
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+    }
+}
+
+
+.edit-profile {
+    padding: 50px 0;
+
+    .profile-img {
+        text-align: center;
+        padding-bottom: 20px;
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+        }
+    }
+
+    .profile-cntent {
+        padding-left: 100px;
+
+        h3 {
+            @include sub-sub-title;
+            padding-bottom: 5px;
+        }
+    }
+
+}
+
+.profile-sidebar-outer {
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    padding: 30px 0;
+}
+
+.preview-img-outer {
+    border: 2px solid $border-color;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    
+    .preview-img {
+        margin: 10px;
+        background-color: $gray;
+        text-align: center;
+    }
+
+}
+
+
+.checkout {
+    padding: 50px 0;
+
+    .billing-title {
+        @include title;
+        text-transform: capitalize;
+        padding-bottom: 10px;
+    }
+
+    .your-cart {
+        @include sub-title;
+        text-transform: capitalize;
+    }
+}

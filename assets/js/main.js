@@ -84,3 +84,4 @@ function scrollFunction() {
     sticky_menu.classList.remove('sticky_menu');
   }
 }
+
