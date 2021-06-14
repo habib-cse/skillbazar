@@ -21,6 +21,13 @@
             text-transform: capitalize;
         }
     }
+
+    // Responsive Style
+    @media (max-width: 767px) {
+        h2 {
+            padding-top: 10px;
+        }
+    }
 }
 
 
@@ -45,8 +52,18 @@
             @include sub-sub-title;
             padding-bottom: 5px;
         }
-    }
 
+        // Responsive Style
+        @media (max-width: 767px) {
+            padding-left: 0;
+            padding-top: 30px;
+        }
+
+         // Responsive Style
+        @media (min-width: 768px) and (max-width: 1100px) {
+            padding-left: 0;
+        }
+    }
 }
 
 .profile-sidebar-outer {
@@ -65,7 +82,6 @@
         background-color: $gray;
         text-align: center;
     }
-
 }
 
 

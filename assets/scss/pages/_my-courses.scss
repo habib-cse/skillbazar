@@ -70,7 +70,11 @@
                 color: $primary-color;
             }
         }
+
+        // Responsive Style
+        @media (max-width: 767px) {
+            margin-top: 30px;
+        }
     }
-    
 }
 

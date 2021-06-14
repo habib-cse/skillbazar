@@ -16,6 +16,9 @@ $(document).ready(function() {
               items:3
           },
           1000:{
+              items:5
+          },
+          1200:{
               items:7
           }
         }
@@ -36,9 +39,12 @@ $(document).ready(function() {
               items:1
           },
           600:{
-              items:3
+              items:2
           },
           1000:{
+              items:3
+          },
+          1200:{
               items:4
           }
         }
@@ -61,27 +67,130 @@ $(document).ready(function() {
               items:2
           },
           1000:{
+              items:3
+          },
+          1200:{
               items:4
           }
         }
     });
-
-
-
-    
-
-
 });
 
 
+
+var screen_size = window.innerWidth;
+if(screen_size > 768) {
 // Stricky Menu
-var sticky_menu = document.getElementById("sticky_menu");
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    sticky_menu.classList.add('sticky_menu');
-  } else {
-    sticky_menu.classList.remove('sticky_menu');
-  }
+    var sticky_menu = document.getElementById("sticky_menu");
+    window.onscroll = function() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            sticky_menu.classList.add('sticky_menu');
+        } else {
+            sticky_menu.classList.remove('sticky_menu');
+        }
+    };
+}else{
+
+    // Stricky Mobile Menu
+    var sticky_mobile_menu = document.getElementById("sticky_mobile_menu");
+    window.onscroll = function() {
+        if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
+            sticky_mobile_menu.classList.add('sticky_mobile_menu');
+        } else {
+            sticky_mobile_menu.classList.remove('sticky_mobile_menu');
+        }
+    };
 }
 
+
+
+function OpenNotify() {
+    var get_id = document.getElementById('notification');
+    
+    if( get_id.style.opacity == 0 ) {
+        get_id.style.opacity = 1;
+        get_id.style.visibility = 'visible';
+    } else {
+        get_id.style.opacity = 0;
+        get_id.style.visibility = 'hidden';
+    }
+}
+
+
+function OpenWishlist() {
+    var get_id = document.getElementById('wishlist');
+    
+    if( get_id.style.opacity == 0 ) {
+        get_id.style.opacity = 1;
+        get_id.style.visibility = 'visible';
+    } else {
+        get_id.style.opacity = 0;
+        get_id.style.visibility = 'hidden';
+    }
+}
+
+
+function OpenCart() {
+    var get_id = document.getElementById('go_cart');
+    
+    if( get_id.style.opacity == 0 ) {
+        get_id.style.opacity = 1;
+        get_id.style.visibility = 'visible';
+    } else {
+        get_id.style.opacity = 0;
+        get_id.style.visibility = 'hidden';
+    }
+}
+
+
+function OpenProfile() {
+    var get_id = document.getElementById('profile_info');
+    
+    if( get_id.style.opacity == 0 ) {
+        get_id.style.opacity = 1;
+        get_id.style.visibility = 'visible';
+    } else {
+        get_id.style.opacity = 0;
+        get_id.style.visibility = 'hidden';
+    }
+}
+
+
+
+
+var player = videojs('video');
+
+player.playlist([{
+  sources: [{
+    src: 'assets/video/class2.mkv',
+    type: 'video/mp4'
+  }],
+  poster: 'assets/video/posters/class1.jpg'
+}, {
+  sources: [{
+    src: 'http://media.w3.org/2010/05/bunny/trailer.mp4',
+    type: 'video/mp4'
+  }],
+  poster: 'http://media.w3.org/2010/05/bunny/poster.png'
+}, {
+  sources: [{
+    src: 'http://vjs.zencdn.net/v/oceans.mp4',
+    type: 'video/mp4'
+  }],
+  poster: 'http://www.videojs.com/img/poster.jpg'
+}, {
+  sources: [{
+    src: 'http://media.w3.org/2010/05/bunny/movie.mp4',
+    type: 'video/mp4'
+  }],
+  poster: 'http://media.w3.org/2010/05/bunny/poster.png'
+}, {
+  sources: [{
+    src: 'http://media.w3.org/2010/05/video/movie_300.mp4',
+    type: 'video/mp4'
+  }],
+  poster: 'http://media.w3.org/2010/05/video/poster.png'
+}]);
+
+// Play through the playlist automatically.
+player.playlist.autoadvance(0);
