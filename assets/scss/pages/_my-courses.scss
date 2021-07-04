@@ -1,4 +1,4 @@
-// 
+//
 // My Courses
 // ========================
 
@@ -22,7 +22,11 @@
     .my-course-item {
         border: 1px solid $border-color;
         border-radius: 4px;
-    
+
+        img {
+          width: 100%;
+        }
+
         h3 {
             @include sub-sub-title;
             font-size: 16px;

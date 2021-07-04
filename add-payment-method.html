@@ -1,6 +1,3 @@
-  <!-- Home Page
-================================================== -->
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -15,6 +12,7 @@
     ================================================== -->
     <title>Education Title </title>
 
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/all.css">
@@ -22,226 +20,451 @@
 
   </head>
   <body>
+    <main id="primary" class="site-main">
 
-    <header>
-      <div class="header-top">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-7 col-lg-6 col-xl-4">
-              <div class="need-help">
-                <ul>
-                  <li>Have any question?</li>
-                  <li><a href="tel:00123456789" class="value"><i class="fas fa-phone"></i> (00) 123 456 789</a></li>
-                  <li><a href="mailto:habib@gmail.com"><i class="fas fa-envelope"></i> Habib@gamil.com</a></li>
+      <header class="desktop-menu">
+        <div class="header-top">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-7 col-lg-6 col-xl-4">
+                <div class="need-help">
+                  <ul>
+                    <li>Have any question?</li>
+                    <li><a href="tel:00123456789" class="value"><i class="fas fa-phone"></i> (00) 123 456 789</a></li>
+                    <li><a href="mailto:habib@gmail.com"><i class="fas fa-envelope"></i> Habib@gamil.com</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-lg-4 col-xl-6">
+                <div class="offer">
+                  <marquee behavior="" direction="">todays offers here....</marquee>
+                </div>
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2">
+                <ul class="social-area">
+                  <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href=""><i class="fab fa-youtube"></i></a></li>
                 </ul>
               </div>
-            </div>
-            <div class="col-md-3 col-lg-4 col-xl-6">
-              <div class="offer">
-                <marquee behavior="" direction="">todays offers here....</marquee>
-              </div>
-            </div>
-            <div class="col-md-2 col-lg-2 col-xl-2">
-              <ul class="social-area">
-                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href=""><i class="fab fa-youtube"></i></a></li>
-              </ul>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="header-bottom" id="sticky_menu">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xl-2 col-lg-2 col-md-2">
-              <div class="header-logo">
-                <a href=""><img src="assets/img/base/header-logo.png" alt="Header Logo"></a>
+        <div class="header-bottom" id="sticky_menu">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-2 col-lg-2 col-md-2">
+                <div class="header-logo">
+                  <a href="home.html"><img src="assets/img/base/header-logo.png" alt="Header Logo"></a>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-2">
+                <div class="header-menu">
+                  <ul>
+                    <li><a href=""><i class="fas fa-bars"></i> categories</a>
+                      <ul  class="all-courses">
+                        <li><a href="">web development</a></li>
+                        <li><a href="">web development</a></li>
+                        <li><a href="">web development</a></li>
+                        <li><a href="">web development</a></li>
+                        <li><a href="">web development</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-5 col-lg-5 col-md-5">
+                <div class="menu-search">
+                  <input type="text" name="q" placeholder="Seach your favourite course........">
+                  <input type="submit" value="">
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-3 col-md-3">
+                <div class="profile-area">
+                  <ul>
+                    <li><a href="">Register</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href=""><i class="far fa-bell"><span>5</span></i></a>
+                      <div class="notifi-area">
+                        <h4>notifications</h4>
+
+                        <table class="table table-striped table-hover">
+                          <tbody>
+                            <tr>
+                              <td colspan="2"><a href="">Lorem, ipsum dolor.....</a></td>
+                            </tr>
+                            <tr>
+                              <td colspan="2"><a href="">Lorem, ipsum dolor.....</a></td>
+                            </tr>
+                            <tr>
+                              <td colspan="2"><a href="">Lorem, ipsum dolor.....</a></td>
+                            </tr>
+                            <tr>
+                              <td colspan="2"><a href="">Lorem, ipsum dolor.....</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <div class="all-notific">
+                          <div class="d-grid gap-2 d-md-block">
+                            <button class="btn mark-read" type="button">mark as read</button>
+                            <a href="view-notifications.html" class="btn" type="button">see all</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li><a><i class="far fa-heart"><span>2</span></i></a>
+                      <div class="wishlists">
+                        <div class="card mb-3" style="max-width: 360px;">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="assets/img/thumb/3-450x300.jpg" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">his is a wider card with supporting text......</h5>
+                                <p class="card-text">TK8000</p>
+                              </div>
+                            </div>
+                            <div class="enroll-btn">
+                              <a href="">enroll now</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card mb-3" style="max-width: 360px;">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="assets/img/thumb/3-450x300.jpg" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">his is a wider card with supporting text......</h5>
+                                <p class="card-text">TK8000</p>
+                              </div>
+                            </div>
+                            <div class="enroll-btn">
+                              <a href="">enroll now</a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card mb-3" style="max-width: 360px;">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="assets/img/thumb/3-450x300.jpg" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">his is a wider card with supporting text......</h5>
+                                <p class="card-text">TK8000</p>
+                              </div>
+                            </div>
+                            <div class="enroll-btn">
+                              <a href="">enroll now</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="go-wishlist">
+                          <a href="my-wishlists.html">go to wishlists</a>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li><a href=""><i class="fas fa-cart-plus"><span>3</span></i></a>
+                      <div class="wishlists">
+                        <div class="card mb-3" style="max-width: 360px;">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="assets/img/thumb/3-450x300.jpg" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">his is a wider card with supporting text......</h5>
+                                <p class="card-text">TK8000</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card mb-3" style="max-width: 360px;">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="assets/img/thumb/3-450x300.jpg" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">his is a wider card with supporting text......</h5>
+                                <p class="card-text">TK8000</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card mb-3" style="max-width: 360px;">
+                          <div class="row g-0">
+                            <div class="col-md-4">
+                              <img src="assets/img/thumb/3-450x300.jpg" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">his is a wider card with supporting text......</h5>
+                                <p class="card-text">TK8000</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="enroll-btn go-cart">
+                          <a href="cart.html">go to cart</a>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li><a href=""><img src="assets/img/thumb/athony1-thumb.jpg" alt=""></a>
+                        <ul class="profile-info">
+                          <li><a href="my-courses.html">My courses</a></li>
+                          <li><a href="cart.html">My cart</a></li>
+                          <li><a href="my-wishlists.html">wishlists</a></li>
+                          <li><a href="view-notifications.html">notifications</a></li>
+                          <li><a href="">Messages</a></li>
+                          <li><a href="my-profile.html">my profile</a></li>
+                          <li><a href="update-password.html">change password</a></li>
+                          <li><a href="edit-profile.html">edit profile</a></li>
+                          <li><a href="">logout</a></li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="col-xl-1 col-lg-2 col-md-2">
-              <div class="header-menu">
-                <ul>
-                  <li><a href=""><i class="fas fa-bars"></i> categories</a>
-                    <ul  class="all-courses">
-                      <li><a href="">web development</a></li>
-                      <li><a href="">web development</a></li>
-                      <li><a href="">web development</a></li>
-                      <li><a href="">web development</a></li>
-                      <li><a href="">web development</a></li>
-                    </ul>
-                  </li>
+          </div>
+        </div>
+      </header>
+
+
+      <!-- Mobile Menu -->
+      <header class="mobile-menu">
+        <div class="header-top">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="need-help">
+                  <ul>
+                    <li class="pb-2">Have any question?</li>
+                    <li><a href="tel:00123456789" class="value"><i class="fas fa-phone"></i> (00) 123 456 789</a></li>
+                    <li><a href="mailto:habib@gmail.com"><i class="fas fa-envelope"></i> Habib@gamil.com</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="offer pt-2">
+                  <marquee behavior="" direction="">todays offers here....</marquee>
+                </div>
+              </div>
+              <div class="col-12">
+                <ul class="social-area">
+                  <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href=""><i class="fab fa-youtube"></i></a></li>
                 </ul>
               </div>
             </div>
-            <div class="col-xl-5 col-lg-5 col-md-5">
-              <div class="menu-search">
-                <input type="text" name="q" placeholder="Seach your favourite course........">
-                <input type="submit" value="">
+          </div>
+        </div>
+
+
+
+        <div class="header-bottom" id="sticky_mobile_menu">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-4">
+                <div class="header-logo">
+                  <a href="home.html"><img src="assets/img/base/footer-logo.png" alt="Footer Logo"></a>
+                </div>
               </div>
-            </div>
-            <div class="col-xl-4 col-lg-3 col-md-3">
-              <div class="profile-area">
-                <ul>
-                  <li><a href="">Register</a></li>
-                  <li><a href="">Login</a></li>
-                  <li><a href=""><i class="far fa-bell"><span>5</span></i></a>
-                    <div class="notifi-area">
-                      <h4>notifications</h4>
+              <div class="col-8">
+                <div class="profile-area">
 
-                      <table class="table table-striped table-hover">
-                        <tbody>
-                          <tr>
-                            <td colspan="2"><a href="">Lorem, ipsum dolor.....</a></td>
-                          </tr>
-                          <tr>
-                            <td colspan="2"><a href="">Lorem, ipsum dolor.....</a></td>
-                          </tr>
-                          <tr>
-                            <td colspan="2"><a href="">Lorem, ipsum dolor.....</a></td>
-                          </tr>
-                          <tr>
-                            <td colspan="2"><a href="">Lorem, ipsum dolor.....</a></td>
-                          </tr>
-                        </tbody>
-                      </table>
+                  <ul>
+                    <!-- <li><a href="">Register</a></li>
+                    <li><a href="">Login</a></li> -->
+                    <li type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"> <i class="fas fa-search"></i></li>
+                    <li><a onclick="OpenNotify();" ><i class="far fa-bell"><span>5</span></i></a>
+                      <div class="notifi-area" id="notification">
+                        <h4>notifications</h4>
 
-                      <div class="all-notific">
-                        <div class="d-grid gap-2 d-md-block">
-                          <button class="btn mark-read" type="button">mark as read</button>
-                          <button class="btn" type="button">see all</button>
+                        <table class="table table-striped table-hover">
+                          <tbody>
+                            <tr>
+                              <td colspan="2"><a href="">Lorem, ipsum dolor.....</a></td>
+                            </tr>
+                            <tr>
+                              <td colspan="2"><a href="">Lorem, ipsum dolor.....</a></td>
+                            </tr>
+                            <tr>
+                              <td colspan="2"><a href="">Lorem, ipsum dolor.....</a></td>
+                            </tr>
+                            <tr>
+                              <td colspan="2"><a href="">Lorem, ipsum dolor.....</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <div class="all-notific">
+                          <div class="d-grid gap-2 d-md-block">
+                            <button class="btn mark-read" type="button">mark as read</button>
+                            <a href="view-notifications.html" class="btn" type="button">see all</a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </li>
+                    </li>
 
-                  <li><a href=""><i class="far fa-heart"><span>2</span></i></a>
-                    <div class="wishlists">
-                      <div class="card mb-3" style="max-width: 360px;">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="assets/img/thumb/3-450x300.jpg" alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">his is a wider card with supporting text......</h5>
-                              <p class="card-text">TK8000</p>
+                    <li><a onclick="OpenWishlist();"><i class="far fa-heart"><span>2</span></i></a>
+                      <div class="wishlists" id="wishlist">
+                        <div class="card mb-3" style="max-width: 360px;">
+                          <div class="row g-0">
+                            <div class="col-md-4 col-4">
+                              <img src="assets/img/thumb/3-450x300.jpg" alt="...">
                             </div>
-                          </div>
-                          <div class="enroll-btn">
-                            <a href="">enroll now</a>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card mb-3" style="max-width: 360px;">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="assets/img/thumb/3-450x300.jpg" alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">his is a wider card with supporting text......</h5>
-                              <p class="card-text">TK8000</p>
+                            <div class="col-md-8 col-8">
+                              <div class="card-body">
+                                <h5 class="card-title">his is a wider card with supporting text......</h5>
+                                <p class="card-text">TK8000</p>
+                              </div>
                             </div>
-                          </div>
-                          <div class="enroll-btn">
-                            <a href="">enroll now</a>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="card mb-3" style="max-width: 360px;">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="assets/img/thumb/3-450x300.jpg" alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">his is a wider card with supporting text......</h5>
-                              <p class="card-text">TK8000</p>
-                            </div>
-                          </div>
-                          <div class="enroll-btn">
-                            <a href="">enroll now</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="go-wishlist">
-                        <a href="my-wishlists.html">go to wishlists</a>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li><a href=""><i class="fas fa-cart-plus"><span>3</span></i></a>
-                    <div class="wishlists">
-                      <div class="card mb-3" style="max-width: 360px;">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="assets/img/thumb/3-450x300.jpg" alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">his is a wider card with supporting text......</h5>
-                              <p class="card-text">TK8000</p>
+                            <div class="enroll-btn">
+                              <a href="">enroll now</a>
                             </div>
                           </div>
                         </div>
-                      </div>
 
-                      <div class="card mb-3" style="max-width: 360px;">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="assets/img/thumb/3-450x300.jpg" alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">his is a wider card with supporting text......</h5>
-                              <p class="card-text">TK8000</p>
+                        <div class="card mb-3" style="max-width: 360px;">
+                          <div class="row g-0">
+                            <div class="col-md-4 col-4">
+                              <img src="assets/img/thumb/3-450x300.jpg" alt="...">
+                            </div>
+                            <div class="col-md-8 col-8">
+                              <div class="card-body">
+                                <h5 class="card-title">his is a wider card with supporting text......</h5>
+                                <p class="card-text">TK8000</p>
+                              </div>
+                            </div>
+                            <div class="enroll-btn">
+                              <a href="">enroll now</a>
                             </div>
                           </div>
                         </div>
-                      </div>
 
-                      <div class="card mb-3" style="max-width: 360px;">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="assets/img/thumb/3-450x300.jpg" alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">his is a wider card with supporting text......</h5>
-                              <p class="card-text">TK8000</p>
+                        <div class="card mb-3" style="max-width: 360px;">
+                          <div class="row g-0">
+                            <div class="col-md-4 col-4">
+                              <img src="assets/img/thumb/3-450x300.jpg" alt="...">
+                            </div>
+                            <div class="col-md-8 col-8">
+                              <div class="card-body">
+                                <h5 class="card-title">his is a wider card with supporting text......</h5>
+                                <p class="card-text">TK8000</p>
+                              </div>
+                            </div>
+                            <div class="enroll-btn">
+                              <a href="">enroll now</a>
                             </div>
                           </div>
                         </div>
+                        <div class="go-wishlist">
+                          <a href="my-wishlists.html">go to wishlists</a>
+                        </div>
                       </div>
-                      <div class="enroll-btn go-cart">
-                        <a href="cart.html">go to cart</a>
-                      </div>
-                    </div>
-                  </li>
+                    </li>
 
-                  <li><a href=""><img src="assets/img/thumb/athony1-thumb.jpg" alt=""></a>
-                      <ul class="profile-info">
-                        <li><a href="">My courses</a></li>
-                        <li><a href="">My cart</a></li>
-                        <li><a href="">wishlists</a></li>
-                        <li><a href="">notifications</a></li>
+                    <li><a onclick="OpenCart();"><i class="fas fa-cart-plus"><span>3</span></i></a>
+                      <div class="wishlists" id="go_cart">
+                        <div class="card mb-3" style="max-width: 360px;">
+                          <div class="row g-0">
+                            <div class="col-md-4 col-4">
+                              <img src="assets/img/thumb/3-450x300.jpg" alt="...">
+                            </div>
+                            <div class="col-md-8 col-8">
+                              <div class="card-body">
+                                <h5 class="card-title">his is a wider card with supporting text......</h5>
+                                <p class="card-text">TK8000</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card mb-3" style="max-width: 360px;">
+                          <div class="row g-0">
+                            <div class="col-md-4 col-4">
+                              <img src="assets/img/thumb/3-450x300.jpg" alt="...">
+                            </div>
+                            <div class="col-md-8 col-8">
+                              <div class="card-body">
+                                <h5 class="card-title">his is a wider card with supporting text......</h5>
+                                <p class="card-text">TK8000</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card mb-3" style="max-width: 360px;">
+                          <div class="row g-0">
+                            <div class="col-md-4 col-4">
+                              <img src="assets/img/thumb/3-450x300.jpg" alt="...">
+                            </div>
+                            <div class="col-md-8 col-8">
+                              <div class="card-body">
+                                <h5 class="card-title">his is a wider card with supporting text......</h5>
+                                <p class="card-text">TK8000</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="enroll-btn go-cart">
+                          <a href="cart.html">go to cart</a>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li><a onclick="OpenProfile();"><img src="assets/img/thumb/athony1-thumb.jpg" alt=""></a>
+                      <ul class="profile-info" id="profile_info">
+                        <li><a href="my-courses.html">My courses</a></li>
+                        <li><a href="cart.html">My cart</a></li>
+                        <li><a href="my-wishlists.html">wishlists</a></li>
+                        <li><a href="view-notifications.html">notifications</a></li>
                         <li><a href="">Messages</a></li>
                         <li><a href="my-profile.html">my profile</a></li>
-                        <li><a href="">change password</a></li>
+                        <li><a href="update-password.html">change password</a></li>
                         <li><a href="edit-profile.html">edit profile</a></li>
                         <li><a href="">logout</a></li>
                       </ul>
-                  </li>
-                </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Search Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="col-12">
+                <div class="menu-search">
+                  <input type="text" name="q" placeholder="Seach your favourite course........">
+                  <input type="submit" value="">
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </header>
 
     <main id="primary" class="site-main">
       <section class="my-courses-breadcrumb">
@@ -269,9 +492,9 @@
                 <div class="profile-sidebar">
                   <div class="list-group list-group-flush">
                     <a href="edit-profile.html" class="list-group-item list-group-item-action" aria-current="true">Update Profile</a>
-                    <a href="update-profile-picture.html" class="list-group-item list-group-item-action active">Change Profile Image</a>
+                    <a href="update-profile-picture.html" class="list-group-item list-group-item-action">Change Profile Image</a>
                     <a href="update-password.html" class="list-group-item list-group-item-action">Update Password</a>
-                    <a href="add-payment-method.html" class="list-group-item list-group-item-action">Add Payment Method</a>
+                    <a href="add-payment-method.html" class="list-group-item list-group-item-action active">Add Payment Method</a>
                     <a href="my-profile.html" class="list-group-item list-group-item-action">View Profile</a>
                     <a href="#" class="list-group-item list-group-item-action">Delete Account</a>
                   </div>
@@ -281,16 +504,16 @@
 
             <div class="col-xl-8 col-lg-8 col-md-8">
               <div class="profile-cntent">
-                
+
                 <h4>No Payment Method Added!</h4>
-                
+
 
               </div>
             </div>
           </div>
         </div>
       </section>
-      
+
 
     </main>
 
@@ -344,7 +567,7 @@
               <ul class="footer-social">
                 <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href=""><i class="fab fa-youtube"></i></a></li>
-              </ul>              
+              </ul>
             </div>
           </div>
         </div>
@@ -364,8 +587,8 @@
     </footer>
 
 
-
     <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/main.js"></script>

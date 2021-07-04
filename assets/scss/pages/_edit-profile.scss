@@ -1,8 +1,14 @@
-// 
+//
 // My Profile Page
 // -----------------------
 .my-profile {
     padding-top: 50px;
+
+    .profile-img {
+      img {
+        width: 100%;
+      }
+    }
 
     h2 {
         @include title;
@@ -76,7 +82,7 @@
     border: 2px solid $border-color;
     border-radius: 4px;
     margin-bottom: 30px;
-    
+
     .preview-img {
         margin: 10px;
         background-color: $gray;
@@ -98,4 +104,55 @@
         @include sub-title;
         text-transform: capitalize;
     }
+}
+
+
+// Login page css
+
+.login_page {
+  padding: 50px 0;
+
+  .update-btn {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+  }
+  .form-check {
+    text-align: left;
+  }
+  .login_other {
+    text-align: left;
+  }
+}
+.login_content {
+  width: 30%;
+  margin: 0 auto;
+
+  img {
+    width: 200px;
+  }
+
+  .form-check .form-check-input {
+    float: inherit;
+  }
+}
+
+
+// Register Page css
+.register_page {
+  padding: 50px 0;
+
+  img {
+    width: 200px;
+  }
+}
+.register_form {
+  width: 55%;
+  margin: 0 auto;
+
+  .update-btn {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+  }
 }

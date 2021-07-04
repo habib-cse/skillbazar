@@ -48,9 +48,9 @@
       font-size: 14px;
       padding: 5px;
     }
-    i{ 
+    i{
       color: #ec5252;
-      font-size: 20px; 
+      font-size: 20px;
     }
   }
 }
@@ -101,7 +101,7 @@
       font-weight: 400;
       padding: 10px;
       text-transform: uppercase;
-      
+
     }
   }
 
@@ -278,7 +278,7 @@
   .all-notific {
     text-align: center;
 
-    button {
+    a {
       color: $white;
       background-color: $primary-color;
       text-transform: capitalize;
@@ -380,7 +380,7 @@
   }
 
 
-} 
+}
 
 
 
@@ -388,9 +388,8 @@
   .desktop-menu {
     display: none;
   }
-  
+
   .mobile-menu {
     display: block;
   }
 }
-  

@@ -106,10 +106,22 @@ if(screen_size > 768) {
 
 function OpenNotify() {
     var get_id = document.getElementById('notification');
-    
+    var get_wish = document.getElementById('wishlist');
+    var get_cart = document.getElementById('go_cart');
+    var get_profile = document.getElementById('profile_info');
+
     if( get_id.style.opacity == 0 ) {
         get_id.style.opacity = 1;
         get_id.style.visibility = 'visible';
+
+        get_wish.style.opacity = 0;
+        get_wish.style.visibility = 'hidden';
+
+        get_cart.style.opacity = 0;
+        get_cart.style.visibility = 'hidden';
+
+        get_profile.style.opacity = 0;
+        get_profile.style.visibility = 'hidden';
     } else {
         get_id.style.opacity = 0;
         get_id.style.visibility = 'hidden';
@@ -119,10 +131,22 @@ function OpenNotify() {
 
 function OpenWishlist() {
     var get_id = document.getElementById('wishlist');
-    
+    var get_notify = document.getElementById('notification');
+    var get_cart = document.getElementById('go_cart');
+    var get_profile = document.getElementById('profile_info');
+
     if( get_id.style.opacity == 0 ) {
         get_id.style.opacity = 1;
         get_id.style.visibility = 'visible';
+
+        get_cart.style.opacity = 0;
+        get_cart.style.visibility = 'hidden';
+
+        get_notify.style.opacity = 0;
+        get_notify.style.visibility = 'hidden';
+
+        get_profile.style.opacity = 0;
+        get_profile.style.visibility = 'hidden';
     } else {
         get_id.style.opacity = 0;
         get_id.style.visibility = 'hidden';
@@ -132,10 +156,22 @@ function OpenWishlist() {
 
 function OpenCart() {
     var get_id = document.getElementById('go_cart');
-    
+    var get_wish = document.getElementById('wishlist');
+    var get_notify = document.getElementById('notification');
+    var get_profile = document.getElementById('profile_info');
+
     if( get_id.style.opacity == 0 ) {
         get_id.style.opacity = 1;
         get_id.style.visibility = 'visible';
+
+        get_wish.style.opacity = 0;
+        get_wish.style.visibility = 'hidden';
+
+        get_notify.style.opacity = 0;
+        get_notify.style.visibility = 'hidden';
+
+        get_profile.style.opacity = 0;
+        get_profile.style.visibility = 'hidden';
     } else {
         get_id.style.opacity = 0;
         get_id.style.visibility = 'hidden';
@@ -145,10 +181,22 @@ function OpenCart() {
 
 function OpenProfile() {
     var get_id = document.getElementById('profile_info');
-    
+    var get_cart = document.getElementById('go_cart');
+    var get_wish = document.getElementById('wishlist');
+    var get_notify = document.getElementById('notification');
+
     if( get_id.style.opacity == 0 ) {
         get_id.style.opacity = 1;
         get_id.style.visibility = 'visible';
+
+        get_wish.style.opacity = 0;
+        get_wish.style.visibility = 'hidden';
+
+        get_notify.style.opacity = 0;
+        get_notify.style.visibility = 'hidden';
+
+        get_cart.style.opacity = 0;
+        get_cart.style.visibility = 'hidden';
     } else {
         get_id.style.opacity = 0;
         get_id.style.visibility = 'hidden';

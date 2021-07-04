@@ -326,6 +326,9 @@ p {
   line-height: 1.5;
   color: #333; }
 
+main {
+  overflow: hidden; }
+
 .enroll-btn a, .update-btn {
   display: inline-block;
   padding: 5px 15px;
@@ -594,7 +597,7 @@ p {
       width: 10%; }
   .notifi-area .all-notific {
     text-align: center; }
-    .notifi-area .all-notific button {
+    .notifi-area .all-notific a {
       color: #ffffff;
       background-color: #ec5252;
       text-transform: capitalize; }
@@ -1343,6 +1346,9 @@ p {
     margin-bottom: 25px; }
 .single-page .similar-courses {
   padding-bottom: 50px; }
+  @media (max-width: 767px) {
+    .single-page .similar-courses {
+      padding-top: 20px; } }
   .single-page .similar-courses .similar-title {
     border-bottom: 1px solid #ddd;
     margin-bottom: 30px;
@@ -1629,6 +1635,8 @@ p {
   .my-courses .my-course-item {
     border: 1px solid #ddd;
     border-radius: 4px; }
+    .my-courses .my-course-item img {
+      width: 100%; }
     .my-courses .my-course-item h3 {
       font-size: 20px;
       font-weight: 500;
@@ -1710,7 +1718,7 @@ p {
   height: 620px; }
 .video-content .my-video-dimensions {
   width: 100%;
-  height: 620px; }
+  height: 500px; }
 .video-content .video-js .vjs-big-play-button {
   top: 50%;
   left: 50%;
@@ -1800,6 +1808,8 @@ p {
 
 .my-profile {
   padding-top: 50px; }
+  .my-profile .profile-img img {
+    width: 100%; }
   .my-profile h2 {
     font-size: 30px;
     font-weight: 600;
@@ -1879,5 +1889,80 @@ p {
     line-height: 1.2;
     font-family: "Roboto Slab", serif;
     text-transform: capitalize; }
+
+.login_page {
+  padding: 50px 0; }
+  .login_page .update-btn {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px; }
+  .login_page .form-check {
+    text-align: left; }
+  .login_page .login_other {
+    text-align: left; }
+
+.login_content {
+  width: 30%;
+  margin: 0 auto; }
+  .login_content img {
+    width: 200px; }
+  .login_content .form-check .form-check-input {
+    float: inherit; }
+
+.register_page {
+  padding: 50px 0; }
+  .register_page img {
+    width: 200px; }
+
+.register_form {
+  width: 55%;
+  margin: 0 auto; }
+  .register_form .update-btn {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px; }
+
+@media (max-width: 767px) {
+  .video-content .my-video-dimensions {
+    height: 300px; }
+
+  .login_content {
+    width: 100%; }
+
+  .register_form {
+    width: 100%; }
+
+  .notifi-area .all-notific {
+    margin: 0 7px; } }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .video-content .my-video-dimensions {
+    height: 360px; }
+
+  .video-outer {
+    padding-bottom: 30px; }
+
+  .login_content {
+    width: 60%; }
+
+  .register_form {
+    width: 86%; } }
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .video-content .my-video-dimensions {
+    height: 400px; }
+
+  .video-outer {
+    padding-bottom: 30px; }
+
+  .login_content {
+    width: 40%; }
+
+  .register_form {
+    width: 65%; } }
+@media (min-width: 1920px) {
+  .video-content .my-video-dimensions {
+    height: 620px; }
+
+  .register_form {
+    width: 50%; } }
 
 /*# sourceMappingURL=style.css.map */

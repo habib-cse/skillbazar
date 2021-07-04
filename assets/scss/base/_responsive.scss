@@ -1,0 +1,70 @@
+// Mobile
+@media (max-width: 767px) {
+  .video-content .my-video-dimensions {
+    height: 300px;
+  }
+  .login_content {
+    width: 100%;
+  }
+  .register_form {
+    width: 100%;
+  }
+  .notifi-area .all-notific {
+    margin: 0 7px;
+  }
+
+
+}
+
+
+
+
+
+// Tablet
+@media (min-width: 768px) and (max-width: 1023px) {
+  .video-content .my-video-dimensions {
+    height: 360px;
+  }
+  .video-outer {
+    padding-bottom: 30px;
+  }
+  .login_content {
+    width: 60%;
+  }
+  .register_form {
+    width: 86%;
+  }
+
+
+}
+
+
+// Large Tablet
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .video-content .my-video-dimensions {
+    height: 400px;
+  }
+  .video-outer {
+    padding-bottom: 30px;
+  }
+  .login_content {
+    width: 40%;
+  }
+  .register_form {
+    width: 65%;
+  }
+
+
+}
+
+
+@media (min-width: 1920px) {
+  .video-content .my-video-dimensions {
+    height: 620px;
+  }
+  .register_form {
+    width: 50%;
+  }
+
+
+}

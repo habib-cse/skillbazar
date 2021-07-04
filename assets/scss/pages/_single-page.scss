@@ -1,4 +1,4 @@
-// 
+//
 // Single Page
 // ===================
 
@@ -259,25 +259,29 @@
     .similar-courses {
         padding-bottom: 50px;
 
+        @media (max-width: 767px) {
+          padding-top: 20px;
+        }
+
         .similar-title {
             border-bottom: 1px solid $border-color;
             margin-bottom: 30px;
             padding-bottom: 25px;
-            
+
             h2 {
                 @include sub-title;
             }
         }
     }
 
-    
+
 
     .similar-slider {
         .owl-nav {
             position: absolute;
             top: -71px;
             right: 0;
-        
+
             span {
             text-align: center;
             padding: 0 15px;
@@ -344,7 +348,7 @@
                     padding-top: 5px;
                     width: 35px;
                     height: 35px;
-                    border: 2px solid $primary-color; 
+                    border: 2px solid $primary-color;
                     text-align: center;
                     border-radius: 50px;
                     margin: 0 2px;
@@ -482,17 +486,17 @@
             p {
                 text-align: center;
             }
-        } 
+        }
         .ratings-icon li, .creator li {
             display: block;
         }
         .course-accordion {
             margin-top: 516px;
             padding-bottom: 20px;
-        }  
-        
-        .courses-includes {  
-            top: 75px; 
+        }
+
+        .courses-includes {
+            top: 75px;
         }
         .course-include h3 {
             text-align: center;
@@ -501,7 +505,7 @@
         .requirements {
             h2 {
                 text-align: center;
-            } 
+            }
             ul {
                 padding-left: 35px;
             }
@@ -522,7 +526,7 @@
             margin-top: 10px;
         }
         .courses-price p {
-            font-size: 30px; 
+            font-size: 30px;
         }
     }
 }
@@ -530,14 +534,14 @@
 .single-page .comments-list::-webkit-scrollbar {
     width: 8px;               /* width of the entire scrollbar */
 }
-    
+
 .single-page .comments-list::-webkit-scrollbar-track {
     background:#eee;        /* color of the tracking area */
 }
 
 .single-page .comments-list::-webkit-scrollbar-thumb {
     background-color: #bbb;    /* color of the scroll thumb */
-    border-radius: 50px;    
+    border-radius: 50px;
 }
 
 
@@ -575,10 +579,10 @@
 
     // Responsive Style
     // max-width: 767px;
-    @media (max-width: 767px) { 
+    @media (max-width: 767px) {
        a {
         font-size: 18px !important;
-       } 
+       }
     }
 }
 
@@ -591,10 +595,10 @@
         font-size: 20px;
         font-weight: 700;
         display: block;
-        
+
         // Responsive Style
         // max-width: 767px;
-        @media (max-width: 767px) { 
+        @media (max-width: 767px) {
             margin-top: 40px;
         }
     }
